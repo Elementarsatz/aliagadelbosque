@@ -3,7 +3,10 @@
 }
 
 :root {
-  --main-color: #00563B;
+	
+  --main-color: #AE2424;
+
+/*  --main-color: #00563B;*/
 }
 
 .top-lay {
