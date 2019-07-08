@@ -48,14 +48,14 @@
 
   <section id="works" class="container">
 	<select>
-  		<option class="" selected>all</option>
-  		<option class="solo">solo</option>
-  		<option class="chamber">chamber</option>
-  		<option class="vox">voice</option>
-  		<option class="chorus">choir</option>
-  		<option class="soloorch">soloist with orchestra/ensemble</option>
+  		<option class="" onchange="filterSelection('all')" selected>all</option>
+  		<option class="solo" onchange="filterSelection('solo')">solo</option>
+  		<option class="chamber" onchange="filterSelection('chamber')">chamber</option>
+  		<option class="vox" onchange="filterSelection('vox')">voice</option>
+  		<option class="chorus" onchange="filterSelection('chorus')">choir</option>
+  		<option class="soloorch" onchange="filterSelection('soloorch')">soloist with orchestra/ensemble</option>
 
-  		<option class="orch">orchestra</option>
+  		<option class="orch" onchange="filterSelection('orch')">orchestra</option>
 		
 	</select>
 
