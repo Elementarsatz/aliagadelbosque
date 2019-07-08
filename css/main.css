@@ -120,6 +120,8 @@ header {
   color: #494949;
   transition: .25s;
   text-decoration: none;
+  margin:auto;
+  text-size: 15px;
 }
 
 .linkedicons:hover {
