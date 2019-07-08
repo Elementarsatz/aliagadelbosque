@@ -9,6 +9,14 @@
 /*  --main-color: #00563B;*/
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 .top-lay {
   z-index: 100;
 }
@@ -118,7 +126,6 @@ header {
 }
 
 #works {
-
 	padding:30px;
   min-height: 70vh;
   background-color: white;
@@ -129,27 +136,23 @@ header {
   /*text-align: left;*/
 }
 
+.music p {
+  font-size: .65rem;
+}
+
 #works .opus{
-	
 	font-size: 2em;
 	color: #AE2424;
 }
 
 #square{
-	
 	Height: 100px;
 	background-color: #AE2424;
-	
-	
-	
 }
 
-#miscellanea{
-	
+#miscellanea {
 	display: flex;
 	flex-direction:row;
 	justify-content:center;
-	
-	
 }
 

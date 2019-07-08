@@ -19,5 +19,3 @@ $(document).ready(function() {
     $('html, body').stop().animate({ scrollTop: $($(event.target).attr('href')).offset().top - 55 }, 1000);
   });
 });
-
-

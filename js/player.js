@@ -112,7 +112,7 @@
              * Default Options
              */
 
-            var template = ['<svg viewBox="0 0 100 100" id="playable" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" data-play="playable" class="not-started playable">',
+            var template = ['<svg viewBox="0 0 100 100" id="playable" version="1.1" xmlns="http://www.w3.org/2000/svg" width="34" height="34" data-play="playable" class="not-started playable">',
                 '<g class="shape">',
                 '<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#becce1" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="5"/>',
                 '<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#302F32" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="5" transform="rotate(-90 50 50)"/>',
@@ -120,10 +120,8 @@
                 '</g>',
                 '<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#000000" opacity="0.0" pointer-events="all"/>',
                 '<g class="control pause">',
-				'<rect x="35" y="35" width="30" height="30" stroke="#AE2424" fill="#AE2424" stroke-width="1"/>',
-
-				//'<line x1="40" y1="35" x2="40" y2="65" stroke="#000000" fill="none" stroke-width="8" stroke-linecap="round"/>',
-                //'<line x1="60" y1="35" x2="60" y2="65" stroke="#000000" fill="none" stroke-width="8" stroke-linecap="round"/>',
+                '<line x1="40" y1="35" x2="40" y2="65" stroke="#AE2424" fill="none" stroke-width="8" stroke-linecap="round"/>',
+                '<line x1="60" y1="35" x2="60" y2="65" stroke="#AE2424" fill="none" stroke-width="8" stroke-linecap="round"/>',
                 '</g>',
                 '<g class="control play">',
                 '<polygon points="45,35 65,50 45,65" fill="#AE2424" stroke-width="0"></polygon>',
@@ -191,13 +189,11 @@
                     case 'playing':
                         obj.playObj.attr('class', 'playable paused');
                         obj.activeAudio[0].pause();
-						obj.activeAudio[0].currentTime=0;
                         $(audioId).off('timeupdate');
                         break;
                     case 'paused':
                         obj.playObj.attr('class', 'playable playing');
-                        
-						obj.activeAudio[0].play();
+                        obj.activeAudio[0].play();
                         break;
                     case 'ended':
                         obj.playObj.attr('class', 'not-started playable');
