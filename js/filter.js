@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(){
-  console.log('cargo dom');
   // Variable select
   const selectWorks = document.getElementById('select-works');
   const filterSelection = (selection) => {
     const elements = [...document.getElementsByClassName('music')];
     if (selection === 'all') {
-      console.log(elements)
       elements.map((el) => {
         el.classList.remove('hide');
         if (![...el.classList].includes('show'))
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function(){
           el.classList.add('hide');
         }
       });
-      console.log(filteredElements)
       return filteredElements;
     }
   }
@@ -48,38 +45,38 @@ document.addEventListener("DOMContentLoaded", function(){
 //   }
 // }
 
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
+// // Show filtered elements
+// function w3AddClass(element, name) {
+//   var i, arr1, arr2;
+//   arr1 = element.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     if (arr1.indexOf(arr2[i]) == -1) {
+//       element.className += " " + arr2[i];
+//     }
+//   }
+// }
 
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
-    }
-  }
-  element.className = arr1.join(" ");
-}
+// // Hide elements that are not selected
+// function w3RemoveClass(element, name) {
+//   var i, arr1, arr2;
+//   arr1 = element.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     while (arr1.indexOf(arr2[i]) > -1) {
+//       arr1.splice(arr1.indexOf(arr2[i]), 1); 
+//     }
+//   }
+//   element.className = arr1.join(" ");
+// }
 
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+// // Add active class to the current control button (highlight it)
+// var btnContainer = document.getElementById("myBtnContainer");
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
