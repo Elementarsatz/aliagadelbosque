@@ -63,6 +63,11 @@ header {
   font-size: 2.25em;
 }
 
+#home-arrow:hover	{
+	
+	font-style: bold;
+}
+
 /* Home */
 #home {
   min-height: 100vh;
@@ -191,8 +196,20 @@ header {
 
 
 .titles {
-	text-decoration:underline;
+	/*text-decoration:underline;*/
 	margin-top:30px;
+	/*color: #AE2424 ;*/
+	
+}
+
+.news {
+	
+	font-size: 0.8em;
+	
 	
 	
 }
+//**
+.wow {
+   visibility: hidden;
+}**//
