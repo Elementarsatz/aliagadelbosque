@@ -12,10 +12,10 @@ $(document).ready(function() {
   // Smooth scroll
   $('a#home-arrow').click(function(event) {
     event.preventDefault();
-    $('html, body').stop().animate({ scrollTop: $($(event.target).closest('#home-arrow').attr('href')).offset().top - 55 }, 1000);
+    $('html, body').stop().animate({ scrollTop: $($(event.target).closest('#home-arrow').attr('href')).offset().top - 55 }, 800);
   });
   $('.home-link, .about-link, .contact-link').click(function(event) {
     event.preventDefault();
-    $('html, body').stop().animate({ scrollTop: $($(event.target).attr('href')).offset().top - 55 }, 1000);
+    $('html, body').stop().animate({ scrollTop: $($(event.target).attr('href')).offset().top - 55 }, 800);
   });
 });
