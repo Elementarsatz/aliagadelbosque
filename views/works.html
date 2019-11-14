@@ -11,6 +11,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/progres-bar.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="../js/wow.js"></script>
+  <script>
+  new WOW().init();	
+  </script>
   
 
 </head>
@@ -49,7 +54,7 @@
     </nav>
   </header>
 
-  <section id="works" class="container justify-content-start">
+  <section id="works" class="container justify-content-start wow fadeInUp" data-wow-duration="10s">
 		<div class="row">
 			<select id="select-works">
 				<option value="all" class="" selected>all</option>
@@ -61,7 +66,7 @@
 				<option value="orch" class="orch">orchestra/chamber orchestra</option>
 			</select>
 		</div>
-	
+
 		<section class="row pt-4">
 			<div class="col col-sm-6 music solo">
 				<p class="opus">Escenas</p><p>for flute solo<br>2010<br>Duration: 5'</p>
@@ -107,7 +112,7 @@
 			<div class="col col-sm-6 music soloorch">
 				<p class="opus">De Rebus Humanis</p><p>for violin solo and small orchestra<br>2015<br>Duration: 12'</p>	
 				<div class="mediPlayer">
-					<audio class="listen" preload="none" data-size="250" src="../assets/music demos/TF.mp3"></audio>
+					<audio class="listen" preload="none" data-size="250" src="../assets/music demos/TF2.mp3"></audio>
 				</div>
 				<hr>
 			</div>
@@ -127,14 +132,13 @@
 			</div>
 			<div class="col col-sm-6 music solo">
 				<p class="opus">Dos Danzas</p><p>for piano<br>2018<br>Duration: 8'</p>
-				<p> <br>Audio demo coming soon</p>
-				<!--
+				
 				<div class="mediPlayer">
 
-					<audio class="listen" preload="none" data-size="250" src="../assets/final3.wav"></audio>
+					<audio class="listen" preload="none" data-size="250" src="../assets/music demos/2danzas.mp3"></audio>
 
 				</div>
-				-->
+				
 				<hr>
 			</div>
 			<div class="col col-sm-6 music solo">
@@ -149,16 +153,13 @@
 				-->
 				<hr>
 			</div>
-			<div class="col col-sm-6 music soloorch">
+			<div class="col col-sm-6 music soloorch wow bounce">
 				<p class="opus">Dos Crisoles</p><p>for flute and string orchestra (string quintet)<br>2019<br>Duration: 9'</p>
-				<p> <br>Audio demo coming soon</p>
-				<!--
 				<div class="mediPlayer">
 
-					<audio class="listen" preload="none" data-size="250" src="../assets/final3.wav"></audio>
+					<audio class="listen" preload="none" data-size="250" src="../assets/music demos/2cr.mp3"></audio>
 
 				</div>
-				-->
 			</div>
 			<div class="col col-sm-6 music orch">
 				<p class="opus">Ex Bosco, ad Arboretum</p><p>for string orchestra<br>2019<br>Duration:</p>
@@ -205,7 +206,7 @@
 	<script src="../js/player.js"></script>
 	
 	<script>$('.mediPlayer').mediaPlayer();</script>	
-	<script src="../js/opacity.js";></script>
+	<!--<script src="../js/opacity.js";></script>-->
 	<script>
 	
 	$.noConflict();
