@@ -46,7 +46,16 @@ header {
 
 .navbar-brand {
   color: #8E8E8E !important;
+  font-size: 1rem;
 }
+
+
+@media (min-width: 768px) {
+.navbar-brand {
+ font-size: 1.25rem;
+}
+}
+
 .navbar-brand span {
   color: #424242 !important;
 }
@@ -126,7 +135,8 @@ header {
   transition: .25s;
   text-decoration: none;
  
-  text-size: 30px;
+  font-size: 20px;
+
 }
 
 .linkedicons:hover {
@@ -182,6 +192,74 @@ header {
 	
 }
 
+
+#select-project {
+	color: black;
+	outline-color: none;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	border-style: none;
+	outline: none;
+	font-size:20px;
+	width:130px;
+	
+}
+
+#project-list {
+  list-style: none;
+  margin-left: 10px;
+  padding: 0px;
+  font-size: 19px;
+  width: 100%;
+}
+
+
+
+.projectop{
+  margin-bottom: 10px;
+  padding-left: 0px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: padding-left 0.5s, color 0.5s, box-shadow 1s;
+
+}
+
+
+.projectop.selected {
+  color: #ffffff;
+  /* background: #AE2424 repeat url("../assets/transparent.png"); */
+  box-shadow: 0 0 10px 100px #d3d3d3 inset;
+	text-align:right;
+  /* transition: 0.5s; */
+  transition: padding-left 0.5s, color 0.5s, box-shadow 1s;
+}
+
+
+
+.projectop:hover {
+	color: #AE2424	;
+	padding-left: 30px;
+	transition: color 0.5s;
+	transition: padding-left 0.5s;
+
+}
+
+.projectop.hover, .projectop.selected {
+	color: white;
+
+
+}
+/* 
+.projectop.selected:hover:checked {
+    background: #AE2424 repeat url("../assets/transparent.png");
+	box-shadow: 0 0 10px 100px #d3d3d3 inset;
+	transition: box-shadow 0.5s;
+
+} */
+
 .card {
   
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -189,7 +267,7 @@ header {
   border:none;
   border-radius:0px;
   margin: 30px;
-  /*padding: 20px;*/
+  padding: 20px;
 }
 
 
@@ -212,8 +290,44 @@ header {
 	
 	
 }
-//**
+/**
 .wow {
    visibility: hidden;
-}**//
+}**/
 
+.video {
+	
+	width: 100%;
+	
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
