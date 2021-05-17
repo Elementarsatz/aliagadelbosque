@@ -1,0 +1,25 @@
+#header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dddddd;
+  font-size: 0.9em;
+  /* padding-top: 1em;
+  padding-bottom: 1em; */
+}
+
+.header-h1 {
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.header-h1 span {
+  color: #8E8E8E;
+}
+
+.name {
+  color: #8E8E8E;
+}
+
+#header-nav {
+  background-color: #f8f9fa;
+}
