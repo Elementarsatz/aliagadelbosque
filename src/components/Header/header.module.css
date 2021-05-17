@@ -2,8 +2,6 @@
   background-color: #f8f9fa;
   border-bottom: 1px solid #dddddd;
   font-size: 0.9em;
-  /* padding-top: 1em;
-  padding-bottom: 1em; */
 }
 
 .header-h1 {
@@ -22,4 +20,17 @@
 
 #header-nav {
   background-color: #f8f9fa;
+}
+
+.menu-btn {
+  width: 36px;
+  box-shadow: none;
+  border: none;
+  outline: none !important;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.menu-btn img {
+  width: 100%;
 }
