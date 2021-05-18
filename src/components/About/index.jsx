@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const About = () => (
-    <h1>About</h1>
+    <Fragment>
+        <h1>About</h1>
+        <p>Bio</p>
+    </Fragment>
 );
 
 export default About;

@@ -19,28 +19,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* Header único compartido entre componentes */}
         <Header />
-
-        <p>Este es un menu de prueba uwu</p>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/works">Works</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/media">Media</Link>
-            </li>
-            <li>
-              <Link to="/news">News</Link>
-            </li>
-          </ul>
-        </nav>
+        {/* Renderizado por rutas */}
         <Switch>
           <Route path="/about">
             <About />
