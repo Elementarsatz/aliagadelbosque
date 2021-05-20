@@ -5,13 +5,26 @@ import MenuIcon from '../../assets/menu-light.svg';
 
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const toggleSidebar = (toggleValue) => {
+    console.log(toggleValue);
+    const body = document.getElementsByTagName('body')[0];
+    console.log(body)
+    if (sidebarOpen) {
+      console.log('remove');
+      body.classList.remove('no-scroll');
+    } else {
+      console.log('add')
+      body.classList.add('no-scroll');
+    }
+    setSidebarOpen(toggleValue);
+  }
   return (
     <nav id={styles['header-nav']} className="container-fluid py-2 navbar">
       <h6 className="text-left"><span className={styles.name}>Juan Carlos&nbsp;</span>Aliaga Del Bosque</h6>
       <button className={styles['menu-btn']}>
-        <img src={MenuIcon} onClick={() => setSidebarOpen(!sidebarOpen)} />
+        <img src={MenuIcon} onClick={() => toggleSidebar(!sidebarOpen)} />
       </button>
-      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={toggleSidebar} />
     </nav>
   )
 };
