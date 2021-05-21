@@ -22,7 +22,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => (
             </div>
             <ul className={styles['sidebar-list']}>
                 {pages.map(page => (
-                    <li className={styles['sidebar-link']}>
+                    <li className={styles['sidebar-link']} key={`${page.title}-link`}>
                         <Link to={page.path}>{page.title}</Link>
                     </li>
                 ))}
