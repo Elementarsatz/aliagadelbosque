@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import BioPic from '../../assets/bio-pic5.jpg';
 
 const About = () => (

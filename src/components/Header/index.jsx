@@ -6,14 +6,10 @@ import MenuIcon from '../../assets/menu-light.svg';
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const toggleSidebar = (toggleValue) => {
-    console.log(toggleValue);
     const body = document.getElementsByTagName('body')[0];
-    console.log(body)
     if (sidebarOpen) {
-      console.log('remove');
       body.classList.remove('no-scroll');
     } else {
-      console.log('add')
       body.classList.add('no-scroll');
     }
     setSidebarOpen(toggleValue);
