@@ -1,5 +1,8 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import BioPic from '../../assets/bio-pic5.jpg';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const About = () => (
     <div className="container py-5">
@@ -15,8 +18,13 @@ const About = () => (
             </div>
             <div className="col-12 col-md-6 pt-4 pt-lg-0">
                 <div className="w-75 mx-auto">
-                    <img src={BioPic} alt="Juan Carlos Aliaga Del Bosque" className="img-fluid mb-2" />
-                    <p className="text-end text-muted small">ph: Cherry Lowrie</p>
+                    <LazyLoadImage
+                        alt="Juan Carlos Aliaga Del Bosque"
+                        src={BioPic} // use normal <img> attributes as props
+                        width={'100%'}
+                        effect="blur"
+                    />
+                    <p className="text-end text-muted small mt-2">ph: Cherry Lowrie</p>
                 </div>
             </div>
         </div>

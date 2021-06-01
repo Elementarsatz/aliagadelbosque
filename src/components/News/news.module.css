@@ -1,0 +1,8 @@
+.news-card:hover {
+    cursor: pointer;
+}
+
+.lazy-img {
+    max-height: 150px;
+    object-fit: cover;
+}

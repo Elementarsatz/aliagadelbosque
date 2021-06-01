@@ -38,9 +38,26 @@
     list-style: none;
 }
 
+.sidebar-link {
+    transform: translateX(0);
+    transition: 0.25s;
+}
+
+.sidebar-link:hover {
+    transform: translateX(5px);
+}
+
 .sidebar-link a {
     color: #212529;
     text-decoration: none;
+}
+
+.sidebar-link a:hover {
+    color: #c4c4c4;
+}
+
+.active-link a {
+    color: #AD2222;
 }
 
 .close-btn {
