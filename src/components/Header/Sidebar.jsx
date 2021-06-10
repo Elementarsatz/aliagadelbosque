@@ -16,7 +16,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     const currentPath = location.pathname;
     return (
         <>
-            {sidebarOpen && <div className={`${styles['overlay']} ${sidebarOpen && styles['overlay-active']}`}></div>}
+            {sidebarOpen && <div className={`${styles['overlay']} ${sidebarOpen && styles['overlay-active']}`} onClick={() => setSidebarOpen(false)}></div>}
             <div className={`${styles['sidebar-wrapper']} ${sidebarOpen ? styles['active'] : styles['hidden']}`}>
                 <div className="d-flex flex-row justify-content-end">
                     <button className={styles['close-btn']}>
