@@ -6,9 +6,10 @@ import CloseIcon from '../../assets/close.svg';
 const pages = [
     { title: 'Home', path: '/' },
     { title: 'About', path: '/about' },
-    { title: 'Projects', path: '/projects' },
+    { title: 'Works', path: '/works'},
     { title: 'Media', path: '/media' },
-    { title: 'News', path: '/news' }
+    { title: 'News', path: '/news' },
+    { title: 'Projects', path: '/projects' }
 ]
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {

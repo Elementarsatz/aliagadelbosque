@@ -18,3 +18,11 @@
 .section-title {
   color: var(--jcadb-red);
 }
+
+.text-red {
+  color: var(--jcadb-red);
+}
+
+.page-container {
+  min-height: calc(100vh - 52px);
+}
