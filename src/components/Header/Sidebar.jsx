@@ -27,7 +27,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 <ul className={`${styles['sidebar-list']} py-3`}>
                     {pages.map(page => (
                         <li className={`${styles['sidebar-link']} ${page.path === currentPath ? styles['active-link'] : ''} mb-3`} key={`${page.title}-link`}>
-                            <Link to={page.path}>{page.title}</Link>
+                            <Link className="d-block w-100" onClick={() => setSidebarOpen(false)} to={page.path}>{page.title}</Link>
                         </li>
                     ))}
                 </ul>
