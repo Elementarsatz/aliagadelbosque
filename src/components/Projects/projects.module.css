@@ -20,8 +20,12 @@
     text-decoration: none;
     padding: 3px 15px;
     border-radius: 0px 5px 5px 0px;
+    transition: 0.15s;
+    width: calc(100% - 15px);
 }
 
 .project-label.selected {
     background-color: #AD2222;
+    width: 100%;
+    transition: 0.15s;
 }

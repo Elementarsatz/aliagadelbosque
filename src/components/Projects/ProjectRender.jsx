@@ -6,7 +6,7 @@ import gfm from 'remark-gfm'
 const ProjectRender = ({ content }) => {
     useEffect(() => {
         render(<ReactMarkdown remarkPlugins={[gfm]} children={content} />, document.querySelector('#project-content'));
-    }, []);
+    }, [content]);
   
     return null;
   };

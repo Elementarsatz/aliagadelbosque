@@ -12,6 +12,7 @@ const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(projects[0]);
     const selectProject = projectLabel => {
         const selected = projects.find(project => project.label === projectLabel);
+        console.log(selected)
         setSelectedProject(selected);
     }
     return (
@@ -21,10 +22,11 @@ const Projects = () => {
                 <div className="col-12 col-md-3">
                     <ul className={styles['project-list']}>
                         {projects.map(project => (
-                            <li key={`project-${project.label}`} className={`${styles['project-label']} ${project.label === selectedProject.label ? styles.selected : ''}`} onClick={() => selectProject(project.label)}>{project.label}</li>
+                            <li key={`project-${project.label}`} className={`mb-2 ${styles['project-label']} ${project.label === selectedProject.label ? styles.selected : ''}`} onClick={() => selectProject(project.label)}>{project.label}</li>
                         ))}
                     </ul>
                 </div>
+                {console.log(selectedProject)}
                 <div className="col-12 col-md-9 card">
                     <div className="card-body">
                         <div id="project-content">
