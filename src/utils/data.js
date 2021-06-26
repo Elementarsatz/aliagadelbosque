@@ -49,7 +49,45 @@ export const works = [
   { "title":"Crepuscular", "instrumentation":"3 equal voices", "year":2020, "duration":"3", "genre":"choir" },
 ];
 
-export default {
+export const projects = [
+  {
+    label: 'Silva-000',
+    content: `
+## Music for comics: Collaboration with Silva-000
+    
+Comic artist [Silva-000](https://twitter.com/SlLVA_000) has been working on two contrasting titles. The collaboration explores the possibility of writing an original soundtrack for these stories, giving the reader one more layer of perception at the moment of reading the comic or imagining further about it. This work in progress will also feel as an EP album.
+
+These titles and demos are:
+`,
+    embeded: [
+      {
+        title: 'Forbidden Clarity',
+        titleLink: 'https://www.webtoons.com/en/challenge/forbidden-clarity-b/list?title_no=432041&webtoon-platform-redirect=true',
+        image: require(`../assets/fc.png`).default,
+        musicTitle: 'Piano Trio Nº1 I.',
+        musicLink: 'https://soundcloud.com/jcadb/pianotrio11',
+        media: <>
+          <iframe className="soundcloud-player" title="Forbidden Clarity" width="100%" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/981208417&color=%23ad2222&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+        </>
+      },
+      {
+        title: 'Spooky Girlfriend',
+        titleLink: 'https://www.webtoons.com/en/challenge/spooky-girlfriend/list?title_no=170753',
+        image: require(`../assets/spooky2.jpg`).default,
+        musicTitle: '1. Sonidos de la casa',
+        musicLink: 'https://soundcloud.com/jcadb/1-sonidos-de-la-casa/s-UNcXv',
+        media: <>
+          <iframe className="soundcloud-player" title="Spooky Girlfriend" width="100%" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/762376636%3Fsecret_token%3Ds-UNcXv&color=%23ae2424&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+        </>
+      }
+    ]
+  }
+];
+
+const data = {
   news,
   works,
-};
+  projects
+}
+
+export default data;

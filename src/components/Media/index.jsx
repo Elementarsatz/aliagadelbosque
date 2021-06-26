@@ -1,7 +1,12 @@
 import React from 'react';
 
+import PageContainer from '../common/PageContainer';
+import PageTitle from '../common/PageTitle';
+
 const Media = () => (
-    <h1>Media</h1>
+    <PageContainer>
+        <PageTitle title="Media" />
+    </PageContainer>
 );
 
 export default Media;

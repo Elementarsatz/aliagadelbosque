@@ -1,0 +1,27 @@
+.lazy-img {
+    object-fit: cover;
+    max-width: 300px;
+}
+
+.external-link {
+    font-size: small;
+    position: relative;
+    top: -5px;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-label {
+    background-color: #C4C4C4;
+    color: #FFF;
+    text-decoration: none;
+    padding: 3px 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.project-label.selected {
+    background-color: #AD2222;
+}
