@@ -17,7 +17,7 @@ const Projects = () => {
     }
     return (
         <PageContainer>
-            <PageTitle title="Current projects & al." />
+            <PageTitle title="Current projects &#38; al." />
             <div className="row">
                 <div className="col-12 col-md-3">
                     <ul className={styles['project-list']}>
@@ -26,8 +26,7 @@ const Projects = () => {
                         ))}
                     </ul>
                 </div>
-                {console.log(selectedProject)}
-                <div className="col-12 col-md-9 card">
+                <div className="col-12 col-md-9 card border-0">
                     <div className="card-body">
                         <div id="project-content">
                             <ProjectRender content={selectedProject.content}/>
@@ -51,7 +50,9 @@ const Projects = () => {
                                             {item.media}
                                         </div>
                                     </div>
-                                    <div style={{fontSize: '10px', color: '#cccccc', lineBreak: 'anywhere',wordBreak: 'normal', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', fontFamily: 'Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif', fontWeight: 100}}><a href="https://soundcloud.com/jcadb" title="Juan Carlos Aliaga Del Bosque" target="_blank" style={{color: '#cccccc', textDecoration: 'none'}}>Juan Carlos Aliaga Del Bosque</a> · <a href={item.musicLink} title={item.musicTitle} target="_blank" style={{color: '#cccccc', textDecoration: 'none'}}>{item.musicTitle}</a></div>
+                                    <div style={{fontSize: '10px', color: '#cccccc', lineBreak: 'anywhere',wordBreak: 'normal', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', fontFamily: 'Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif', fontWeight: 100}}>
+                                        <a href="https://soundcloud.com/jcadb" title="Juan Carlos Aliaga Del Bosque" target="_blank" rel="noreferrer" style={{color: '#cccccc', textDecoration: 'none'}}>Juan Carlos Aliaga Del Bosque</a> · <a href={item.musicLink} title={item.musicTitle} target="_blank" rel="noreferrer" style={{color: '#cccccc', textDecoration: 'none'}}>{item.musicTitle}</a>
+                                    </div>
                                 </div>
                             ))}
                         </div>)}

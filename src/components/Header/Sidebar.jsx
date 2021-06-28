@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 
 import styles from './sidebar.module.css';
-import CloseIcon from '../../assets/close.svg';
+import CloseIcon from '../../assets/icons/close.svg';
 
 const pages = [
     { title: 'Home', path: '/' },
@@ -21,7 +21,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             <div className={`${styles['sidebar-wrapper']} ${sidebarOpen ? styles['active'] : styles['hidden']}`}>
                 <div className="d-flex flex-row justify-content-end">
                     <button className={styles['close-btn']}>
-                        <img src={CloseIcon} onClick={() => setSidebarOpen(!sidebarOpen)} />
+                        <img alt="Close" src={CloseIcon} onClick={() => setSidebarOpen(!sidebarOpen)} />
                     </button>
                 </div>
                 <ul className={`${styles['sidebar-list']} py-3`}>

@@ -32,7 +32,7 @@ export const news = [
 ];
 
 export const works = [
-  { "title":"Escenas", "instrumentation":"flute solo", "year":2010, "duration":"5'", "genre":"solo" },
+  { "title":"Escenas", "instrumentation":"flute solo", "year":2010, "duration":"5'", media: require('../assets/works/AI-1.mp3').default, "genre":"solo" },
   { "title":"Tres Poemas de Alejandra Pizarnik", "instrumentation":"soprano and piano", "year":2011, "duration":"7'", "genre":"voice" },
   { "title":"Temas y Variaciones", "instrumentation":"flute, clarinet and bassoon", "year":2013, "duration":"6'", "genre":"chamber" },
   { "title":"Tres Poemas de Blanca Varela", "instrumentation":"mixed choir", "year":2013, "duration":"8'", "genre":"choir" },

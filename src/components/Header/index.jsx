@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import styles from './header.module.css';
-import MenuIcon from '../../assets/menu-light.svg';
+import MenuIcon from '../../assets/icons/menu-light.svg';
 
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);

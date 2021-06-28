@@ -6,3 +6,16 @@
     max-height: 150px;
     object-fit: cover;
 }
+
+.modal-img {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.close-btn {
+    z-index: 1000;
+    background: none !important;
+    width: 15px;
+    right: 1em;
+    top: 0.25em;
+}

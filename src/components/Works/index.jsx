@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 
 import PageContainer from '../common/PageContainer';
 import PageTitle from '../common/PageTitle';
@@ -47,12 +48,22 @@ const Works = () => {
                     >
                         <div className="card flex-fill border-0 overflow-hidden">
                             <div className="card-body">
-                                <h5>{item.title}</h5>
+                                <h6>{item.title}</h6>
                                 {
-                                item.instrumentation && <p>for {item.instrumentation}</p>        
+                                item.instrumentation && <span className="d-block small">for {item.instrumentation}</span>        
                                 }
-                                <p>{item.year}</p>
-                                <p>duration: {item.duration}</p>
+                                <span className="d-block small">{item.year}</span>
+                                <span className="d-block small">Duration: {item.duration}</span>
+                                {item.media ? (
+                                    <ReactAudioPlayer
+                                        src={item.media}
+                                        autoPlay
+                                        controls
+                                        className="mt-3"
+                                    />
+                                ) : (
+                                    <p className="d-block small mt-3 mb-0">Audio demo coming soon</p>
+                                )}
                             </div>
                         </div>
                     </div>
